@@ -34,7 +34,7 @@ export default class Previewer extends React.Component {
 
   render () {
     return <>
-      <video src={this.props.source} ref={this.video} controls style={this.props.style} />
+      <video src={this.props.source} ref={this.video} controls style={this.props.style} crossOrigin="Anonymous" />
       <canvas ref={this.canvas} style={{ display: 'none' }} />
     </>
   }
